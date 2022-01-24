@@ -1,0 +1,38 @@
+body {
+    background-color: #F38181;
+}
+
+hr {
+    border-style: none;
+    border-top: dotted #95E1D3 5px;
+    width: 6vw;
+}
+
+h1,
+h3 {
+    color: #FCE38A;
+}
+
+h1 {
+    text-shadow: .1rem .1rem .1rem #000000,
+                -.1rem -.1rem .1rem #EAFFD0;
+}
+
+a,
+a:active,
+a:visited,
+a:link {
+    color: #EAFFD0;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #95E1D3;
+    text-transform: uppercase;
+}
+
+img:hover,
+input:hover,
+textarea:hover {
+    transform: scale(1.2);
+}
