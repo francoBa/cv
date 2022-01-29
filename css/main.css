@@ -1,38 +1,218 @@
+/************************* IMPORT SECTION *************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap');
+
+/************************* GENERAL SELECTORS *************************/
+
+*,
+*::before,
+*::after {
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/************************* TAG SELECTORS *************************/
+
 body {
-    background-color: #F38181;
+    text-align: center;
+    font-family: 'Merriweather', sans-serif;
+    color: #40514E;
 }
 
-hr {
-    border-style: none;
-    border-top: dotted #95E1D3 5px;
-    width: 6vw;
-}
-
-h1,
-h3 {
-    color: #FCE38A;
-}
-
-h1 {
-    text-shadow: .1rem .1rem .1rem #000000,
-                -.1rem -.1rem .1rem #EAFFD0;
-}
+/* div {
+    height: 200px;
+    width: 200px;
+} */
 
 a,
 a:active,
 a:visited,
-a:link {
+a:link,
+h3 {
     color: #EAFFD0;
     text-decoration: none;
 }
 
 a:hover {
     color: #95E1D3;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
-img:hover,
+h1,
+h2 {
+    color: #FCE38A;
+}
+
+h1 {
+    text-shadow: .1rem .1rem .1rem #000000,
+                -.1rem -.1rem .1rem #EAFFD0;
+    /* width: 50%; */
+    margin: 50px auto 0 auto;
+    padding-bottom: 1rem;
+    font-family: 'Sacramento', cursive;
+    font-size: 5.62rem;
+    /*16px = 100% = 1em -- 90px = 562.5% = 5.62em*/
+    line-height: 2;
+}
+
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+hr {
+    border-style: none;
+    border-top: dotted #EAF6F6 5px;
+    width: 6vw;
+    margin: 100px auto;
+}
+
+/* img:hover,
 input:hover,
 textarea:hover {
+    transform: scale(1.1);
+} */
+
+p {
+    line-height: 2;
+}
+
+/************************* CLASS SELECTORS *************************/
+
+.bottom-cloud,
+.top-cloud {
+    position: absolute;
+}
+
+.bottom-cloud {
+    left: 15%;
+    top: 50%;
+}
+
+.bottom-container {
+    background-color: #F38181;
+    padding: 50px 0 20px;
+    /* position: absolute;
+    left: 200px;
+    top: 669px; */
+}
+
+.btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+  }
+
+.certificate {
+    width: 30%;
+    height: auto;
+    float: left;
+    margin-right: 30px;
+}
+
+.contact-message {
+    width: 40%;
+    margin: 40px auto 60px;
+}
+
+.copyright {
+    color: #EAF6F6;
+    margin: 20px 0;
+}
+
+.gif {
+    width: 300px;
+    height: auto;
+}
+
+.icon {
+    width: 2rem;
+    height: auto;
+    margin: 1rem;
+}
+
+.icon:hover {
     transform: scale(1.2);
 }
+
+.intro {
+    width: 40%;
+    margin: auto;
+    text-align: justify;
+}
+
+.middle-container {
+    /* background-color: #ff0000;
+    position: absolute;
+    left: 400px;
+    top: 869px; */
+    margin: 100px 0;
+}
+
+.pro {
+    text-decoration: underline;
+}
+
+.profile > img {
+    width: 15%;
+    margin-bottom: 10px;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+}
+
+.skill-row:nth-child(3) img {
+    float: right;
+    margin-left: 30px;
+}
+
+/* .skill-row > p {
+    clear: both;
+} */
+
+.top-cloud {
+    right: 20%;
+    top: 10%;
+}
+
+.top-container {
+    background-color: #F38181;
+    width: auto;
+    height: auto;
+    position: relative;
+    padding-top: 10vh;
+}
+
+/************************* ID SELECTORS *************************/
